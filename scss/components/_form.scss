@@ -1,0 +1,9 @@
+@use "../abstract" as *;
+
+input {
+  padding: 1.5rem 3rem;
+  outline: none;
+  border: 2px solid $clr-light;
+  max-width: 60rem;
+  width: 100%;
+}

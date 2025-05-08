@@ -1,0 +1,46 @@
+@use "../abstract" as *;
+@use "sass:map";
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: inherit;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: $clr-dark;
+}
+
+h1 {
+  font-size: map.get($clamps, "2xl");
+  line-height: 1.2;
+
+}
+
+h2 {
+  font-size: map.get($clamps, "xl");
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: map.get($clamps, "lg");
+  margin-bottom: 2rem;
+  line-height: 1.4;
+}
+
+h4 {
+  font-size: map.get($clamps, "base");
+  line-height: 1.4;
+}
+
+p {
+  font-size: map.get($clamps, "sm");
+  margin-bottom: 2rem;
+}
