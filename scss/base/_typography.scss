@@ -1,7 +1,6 @@
 @use "../abstract" as *;
 @use "sass:map";
 
-
 h1,
 h2,
 h3,
@@ -25,13 +24,11 @@ h1 {
 
 h2 {
   font-size: map.get($clamps, "xl");
-  margin-bottom: 2rem;
   line-height: 1.2;
 }
 
 h3 {
   font-size: map.get($clamps, "lg");
-  margin-bottom: 2rem;
   line-height: 1.4;
 }
 
@@ -42,5 +39,4 @@ h4 {
 
 p {
   font-size: map.get($clamps, "sm");
-  margin-bottom: 2rem;
 }
