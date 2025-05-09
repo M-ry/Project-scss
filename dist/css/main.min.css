@@ -123,7 +123,6 @@ input {
   padding: 3rem 5rem;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #ccc;
 }
 .nav__wrapper .nav__left {
   display: flex;
@@ -173,7 +172,7 @@ input {
   padding: 6rem 4rem 3rem;
 }
 .footer__wrapper {
-  max-width: 1280px;
+  max-width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1.2fr 1fr 1fr 1fr;
@@ -497,36 +496,45 @@ input {
 .contacts__wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  padding-top: 10rem;
 }
 .contacts__info {
   flex: 1;
-  align-self: center;
   margin-left: 15rem;
   max-width: 50%;
 }
 .contacts__info small {
+  width: 632px;
+  height: 17px;
   font-weight: 500;
   font-size: 12px;
   letter-spacing: 1px;
+  line-height: 140%;
   text-transform: uppercase;
 }
 .contacts__info h1 {
-  padding: 0.5rem 0;
-  font-weight: 500;
-  font-size: 50px;
+  width: 600px;
+  height: 192px;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 120%;
   color: #343333;
 }
 .contacts__info p {
-  font-weight: 500;
-  font-size: 15px;
-  width: 300px;
+  width: 500px;
+  height: 86px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 180%;
   color: #343333;
 }
 .contacts__form {
-  margin: 5rem 0;
-  flex: 1;
+  width: 672px;
+  height: 713px;
 }
 .contacts__form .form__wrapper {
+  width: 544px;
+  height: 585px;
   display: flex;
   flex-direction: column;
   padding: 2rem 5rem;
@@ -606,17 +614,20 @@ input {
 .faq__wrapper {
   display: flex;
   flex-direction: row;
-  padding-left: 10rem;
+  padding: 0 10rem;
 }
-.faq__wrapper h1 {
-  font-size: 2rem;
-  font-weight: 300;
+.faq__wrapper small {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 140%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   margin-bottom: 10px;
 }
 .faq__wrapper h2 {
-  font-size: 3rem;
-  margin-bottom: 40px;
-  font-weight: bold;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 130%;
 }
 .faq__text {
   padding: 0 5rem;
@@ -630,16 +641,15 @@ input {
   justify-content: space-between;
   align-items: flex-start;
   padding: 1rem 0;
-  border-top: 1px solid #eee;
-}
-.faq__item:last-child {
-  border-bottom: 1px solid #eee;
 }
 .faq__question {
+  width: 676px;
+  height: 38px;
   font-size: 18px;
   color: #343333;
-  margin-bottom: 15px;
-  font-weight: normal;
+  line-height: 160%;
+  font-weight: 400;
+  font-size: 24px;
 }
 .faq__answer {
   display: none;
