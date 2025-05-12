@@ -14,27 +14,36 @@
 
 <body>
 
-    <header class="nav">
-        <div class="nav__wrapper">
-            <div class="nav__left ">
-                <a href="#"><img
-                        src="https://cdn.prod.website-files.com/63c3f1995d4c3581bbc944b5/63c3fed42405e70f33df42ee_logo.svg"
-                        alt="logo-img"></a>
-                <a href="#" class="btn btn-accent">We are hiring!</a>
-            </div>
-
-            <div class="nav__right">
-                <ul>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Pages </a></li>
-                </ul>
-                <a href="#" class="btn btn-light">Let's talk</a>
-            </div>
+    <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <div class="header__branding">
+          <a href="#"><img src="./img/63c3fed42405e70f33df42ee_logo.svg" alt="branding" /></a>
+          <a href="#" class="header--hiring">We are hiring!</a>
         </div>
-    </header>
+        <nav id="hdnav">
+          <ul class="header__nav">
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Pages</a></li>
+          <a href="#" class="header--talk">Let's Talk</a>
+        </ul>
+          
+
+        </nav>
+        <div class="ToggleMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  
 
     <section class="jobsBanner">
         <div class="banner__wrapper">
@@ -172,10 +181,12 @@
             <a href="#">Privacy</a>
             <a href="#">Imprint</a>
         </div>
-
-
     </footer>
-
+<script>
+    document.querySelector('.ToggleMenu').addEventListener('click', () => {
+    document.getElementById('hdnav').classList.toggle('active');
+    });
+  </script>
 </body>
 
 </html>

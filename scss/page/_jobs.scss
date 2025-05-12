@@ -2,10 +2,7 @@
 
 .jobsBanner {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10rem 15rem;
-    gap: 2rem;
+    padding: 10rem 22rem;
     background-color: $clr-light;
   
     .banner__wrapper {
@@ -33,37 +30,44 @@
         color: $clr-dark;
       }
     }
-    @media screen and (max-width: 500px) {
-        padding: 2rem 2rem;
-    
-        .banner__wrapper {
-          h1 {
-            font-size: 28px;
-            width: 100%;
-          }
-    
-          p {
-            font-size: 14px;
-            width: 100%;
-          }
-        }
+}
+@media screen and (max-width: 520px) {
+  .jobsBanner {
+    flex-direction: column;
+    padding: 0 5rem;
+
+    .banner__wrapper {
+      small {
+        font-size: 10px;
+        letter-spacing: 0.5px;
+      }
+
+      h1 {
+        padding: 1rem 0;
+        font-size: 32px;
+        width: 100%;
+      }
+
+      p {
+        font-size: 13px;
+        width: 100%;
       }
     }
+  }
+}
   
 
   
 
   .jobsList {
-    padding: 8rem 5rem;
+    padding: 5rem 22rem 10rem;
     background-color: $clr-light;
     display: flex;
-    justify-content: center;
   
     .list__wrapper {
       display: flex;
       flex-direction: column;
       gap: 4rem;
-      max-width: 950px;
       width: 100%;
     }
   
@@ -122,24 +126,44 @@
         }
       }
     }
+  }
 
-    @media screen and (max-width: 500px) {
-        padding: 4rem 2rem;
-    
-        .list__item {
-          display: flex;
-          flex-direction: column;
-    
-          .list__right {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 1rem;
-    
-            h4 {
-              width: 100%;
-            }
-          }
+  @media screen and (max-width: 520px) {
+  .jobsList {
+    padding: 5rem 5rem;
+
+    .list__item {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+
+      .list__left {
+        h2 {
+          font-size: 1.8rem;
+        }
+
+        .btn-light {
+          padding: 0.4rem 0.8rem;
+          font-size: 0.9rem;
+          margin-bottom: 0.5rem;
+        }
+      }
+
+      .list__right {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+
+        h4 {
+          font-size: 1.2rem;
+          width: 100%;
+        }
+
+        .btn-dark {
+          padding: 0.5rem 1.5rem;
+          font-size: 0.9rem;
         }
       }
     }
+  }
+}
   
